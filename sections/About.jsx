@@ -5,6 +5,9 @@ import arrow from '../public/images/arrow.svg';
 import aboutImage from '../public/images/about-image.svg';
 import vector1 from '../public/images/about-vector-1.svg';
 import vector2 from '../public/images/about-vector-2.svg';
+import { motion } from "framer-motion";
+import { TypingText } from '@/components';
+import { fadeIn, slideIn, staggerContainer, textVariant } from "@/utils/motion";
 
 const About = () => {
     return (
@@ -29,13 +32,22 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='flexed flexed-about-div relative'>
-                <Image src={aboutImage} alt="man wearing vr" className='flexed-about-div-img' />
+            <motion.div
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+                className='flexed flexed-about-div relative'
+            >
+                <Image
+                    src={aboutImage} alt="man wearing vr" className='flexed-about-div-img' />
 
                 <Image src={vector1} alt="vector 1" id='vector1' />
-                <Image src={vector2} alt="vector 2" id='vector2' />
+                <motion.img 
+                    variants={fadeIn('up', 'tween', 0.3, 1)} 
+                    src="/images/about-vector-2.svg" alt="vector 2" id='vector2' />
 
-                <div className='flexed-about'>
+                <motion.div variants={fadeIn('up', 'tween', 0.3, 1)} className='flexed-about'>
                     <h2>
                         About
                     </h2>
@@ -56,12 +68,8 @@ const About = () => {
                     <button id='about-btn'>
                         Let's get in touch
                     </button>
-
-
-                </div>
-
-
-            </div>
+                </motion.div>
+            </motion.div>
         </section>
     )
 }

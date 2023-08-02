@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --lg-flex: 3.5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -114,7 +118,8 @@ body {
   align-items: center;
 }
 
-.flexed-to-center h3 {
+.flexed-to-center h3,
+.typing-text {
   font-size: 36px;
   font-weight: 300;
 }
@@ -165,7 +170,7 @@ body {
 
 .flexed-about-div img {
   width: 400px;
-  height: 400px; 
+  height: 400px;
 }
 
 .flexed-about-div-img {
@@ -185,4 +190,65 @@ body {
 .flexed-about p {
   font-size: 14px;
   padding-top: 1rem;
+}
+
+/* Explore */
+.explore {
+  margin-top: 4rem;
+}
+
+.explore-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  height: 500px;
+  transition-property: flex;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+  position: relative;
+}
+
+.exp1 {
+  flex: 10;
+}
+
+.exp {
+  flex: 2;
+}
+
+.explore-heading {
+  transform-origin: 0 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .explore-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    height: 500px;
+    transition-property: flex;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-out;
+    cursor: pointer;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .exp1 {
+    flex: var(--lg-flex);
+  }
+
+  .exp {
+    flex: 0.5;
+  }
+
+  .explore-heading {
+    transform: rotate(-90deg);
+  }
 }
