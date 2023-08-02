@@ -8,6 +8,7 @@ import bgPattern from '../public/images/background-pattern.svg';
 import heroImage from '../public/images/hero-image.svg';
 import call from '../public/images/call.svg';
 import location from '../public/images/location.svg';
+import mail from '../public/images/mail.svg';
 import Image from "next/image";
 
 const Hero = () => {
@@ -31,7 +32,7 @@ const Hero = () => {
 
                         <motion.div
                             variants={textVariant(1.2)}
-                            className="hero-desc"
+                            className="hero-desc "
                         >
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             sed do eiusmod tempor incididunt ut labore et dolore
@@ -53,7 +54,7 @@ const Hero = () => {
                     </div>
 
                     <motion.div
-                        variants={slideIn('right', 'tween', 0.4, 2)}
+                        variants={slideIn('top', 'tween', 0.4, 2)}
                         className="z-10 hero-image"
                     >
                         <Image src={heroImage} alt="icra hero image" className="hero-image" />
@@ -68,9 +69,9 @@ const Hero = () => {
                     />
                 </div>
 
-                <div className="hero-contact">
+                <div className="hero-contact pb-10">
                     <div className="hero-contact-div space-x-4">
-                        <div className="flexed space-x-2">
+                        <div className="hero-contact-border flexed space-x-2">
                             <Image src={location} alt="location" />
                             <div>
                                 <h4>Pay us a Visit</h4>
@@ -80,7 +81,7 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="flexed space-x-4">
+                        <div className=" hero-contact-border flexed space-x-4">
                             <Image src={call} alt="location" />
                             <div>
                                 <h4>Give us a call</h4>
@@ -90,12 +91,12 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="flexed space-x-2">
-                            <Image src={location} alt="location" />
+                        <div className="flexed space-x-4">
+                            <Image src={mail} alt="location" />
                             <div>
-                                <h4>Pay us a Visit</h4>
+                                <h4>Send us a Message</h4>
                                 <p className="text-xs">
-                                    Union St, Seattle, WA 98101, United States
+                                    contact@icra.com
                                 </p>
                             </div>
                         </div>
