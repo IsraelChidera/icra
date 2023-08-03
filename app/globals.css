@@ -240,7 +240,7 @@ body {
   font-weight: 700;
 }
 
-.tech-bg-container .tech-bg-heading h3{
+.tech-bg-container .tech-bg-heading h3 {
   font-size: 2.5rem;
   font-weight: 400;
 }
@@ -250,7 +250,57 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 8rem;
-  margin: 4rem 0 0 0;  
+  margin: 4rem 0 0 0;
+}
+
+.spacing-btw-elements {
+  margin-top: 10rem;
+}
+
+.how-container {
+  position: relative;
+  margin-top: 5rem;
+}
+
+.how-vector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.how1 {
+  background: linear-gradient(
+    180deg,
+    rgb(192.14, 183.37, 231.63) 0%,
+    rgb(128.7, 118.34, 175.31) 100%
+  );
+  border-radius: 79.5px;
+  height: 159px;
+  width: 159px;
+  position: relative;
+}
+
+.how-container-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8rem;
+}
+
+.how1-heading {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.how1 p {
+  color: "#343045";
+  font-size: 3.5rem;
+  font-weight: 700;
+  position: absolute;  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Responsive design */

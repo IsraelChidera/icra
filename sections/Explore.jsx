@@ -14,12 +14,8 @@ import ExploreCard from '@/components/ExploreCard';
 const Explore = () => {
     const [active, setActive] = useState('world-2');
 
-    const handleClick = () => {
-
-    }
-
     return (
-        <section style={{ height: "100vh" }} className='about'>
+        <section style={{ height: "auto" }} className='about spacing-btw-elements'>
             <motion.div
                 variants={staggerContainer}
                 initial="hidden"
@@ -52,7 +48,7 @@ const Explore = () => {
                 whileInView="show"
                 viewport={{ once: false, amount: 0.25 }}
                 className='explore'
-            >                
+            >
 
                 <div className='explore-card space-x-4'>
                     {

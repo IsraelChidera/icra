@@ -9,7 +9,7 @@ import tech4 from '../public/images/tech-4.svg';
 
 const Tech = () => {
     return (
-        <section className="about">
+        <section className="about spacing-btw-elements ">
             <div className="tech-bg-container">
                 <Image src={techBg} alt="background image" />
                 <div className="tech-bg-heading">
