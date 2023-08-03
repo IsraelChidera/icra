@@ -1,5 +1,5 @@
 import { Navbar, Footer } from "../components";
-import { Hero, About, Explore } from "../sections";
+import { Hero, About, Explore, Tech } from "../sections";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       <Hero />
       <About />
       <Explore />
+      <Tech />
     </main>
   );
 }

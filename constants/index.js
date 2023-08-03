@@ -17,27 +17,27 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/images/explore-01.png',
-    title: 'Metaverse',
+    title: 'Simulation',
   },
   {
     id: 'world-2',
     imgUrl: '/images/explore-02.png',
-    title: 'AIoT',
+    title: 'Education',
   },
   {
     id: 'world-3',
     imgUrl: '/images/explore-03.png',
-    title: 'HoloLens',
+    title: 'Self-care',
   },
   {
     id: 'world-4',
     imgUrl: '/images/explore-04.png',
-    title: 'TPCASTT',
+    title: 'Outdoor',
   },
   {
     id: 'world-5',
     imgUrl: '/images/explore-03.png',
-    title: 'AIoT',
+    title: 'Sports',
   },
 ];
 
