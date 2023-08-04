@@ -27,7 +27,7 @@ const Explore = () => {
                     <TypingText title="WHY BUILD?" />
                     <div className='flexed-to-center space-x-4'>
                         <h3>WITH ICRA</h3>
-                        <Image src={arrow} alt="arrow" />
+                        <Image src={arrow} alt="arrow" className='not-mobile' />
                     </div>
                 </div>
 

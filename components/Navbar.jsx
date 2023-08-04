@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { navVariants } from "@/utils/motion";
 import Link from "next/link";
+import Image from "next/image";
+import bars from '../public/images/bars.svg';
 
 const Navbar = () => {
     return (
@@ -10,11 +12,11 @@ const Navbar = () => {
             variants={navVariants}
             initial="hidden"
             whileInView="show"
-            className="flex justify-around items-center pt-4 pb-6"
+            className="flex md:justify-around justify-between items-center md:px-0 px-6 pt-4 pb-6"
         >
             <h1 className="text-2xl">Icra</h1>
 
-            <ul className="flex space-x-4 items-center text-xs">
+            <ul className="md:flex hidden space-x-4 items-center text-xs">
                 <li>
                     <Link href="#">
                         About
@@ -40,10 +42,12 @@ const Navbar = () => {
                 </li>
             </ul>
 
-            <Link href="#" className="text-xs rounded-2xl border-2 border-white py-2 px-8">
+            <Link href="#" className="hidden md:block text-xs rounded-2xl border-2 border-white py-2 px-8">
                 Contact us
             </Link>
-            
+
+            <Image style={{ width: "33px", height: "26px" }} src={bars} alt="bars" className="md:hidden block" />
+
         </motion.nav>
     )
 }

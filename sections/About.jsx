@@ -17,7 +17,7 @@ const About = () => {
                     <h2>Introduction</h2>
                     <div className='flexed-to-center space-x-4'>
                         <h3>To ICRA VR</h3>
-                        <Image src={arrow} alt="arrow" />
+                        <Image src={arrow} alt="arrow" className='not-mobile' />
                     </div>
                 </div>
 

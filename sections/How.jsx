@@ -22,7 +22,7 @@ const How = () => {
                     <TypingText title="HOW WE BUILD" />
                     <div className='flexed-to-center space-x-4'>
                         <h3>WITH ICRA VR?</h3>
-                        <Image src={arrow} alt="arrow" />
+                        <Image src={arrow} alt="arrow" className='not-mobile' />
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@ const How = () => {
                         </div>
 
                         <div className='flexed'>
-                            <Image src={smallArrow} alt="small arrow icon" />
+                            <Image src={smallArrow} className='not-mobile' alt="small arrow icon" />
                             <p className='how1-heading'>
                                 3D Conception & Design
                             </p>
@@ -59,7 +59,7 @@ const How = () => {
                         </div>
 
                         <div className='flexed'>
-                            <Image src={smallArrow} alt="small arrow icon" />
+                            <Image src={smallArrow} className='not-mobile' alt="small arrow icon" />
                             <p className='how1-heading'>
                                 Interaction Design
                             </p>
@@ -72,7 +72,7 @@ const How = () => {
                         </div>
 
                         <div className='flexed'>
-                            <Image src={smallArrow} alt="small arrow icon" />
+                            <Image src={smallArrow} className='not-mobile' alt="small arrow icon" />
                             <p className='how1-heading'>
                                 VR World User Testing
                             </p>
@@ -85,7 +85,7 @@ const How = () => {
                         </div>
 
                         <div className='flexed'>
-                            <Image src={smallArrow} alt="small arrow icon" />
+                            <Image src={smallArrow} className='not-mobile' alt="small arrow icon" />
                             <p className='how1-heading'>
                                 ICRA VR Deploy
                             </p>

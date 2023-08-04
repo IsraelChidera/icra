@@ -21,7 +21,7 @@ const Footer = () => {
           <Image src={logo} alt="logo" />
         </div>
 
-        <div>
+        <div className='not-mobile'>
           <Image src={line} alt="straight line vector" />
         </div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <div>
+        <div className='not-mobile'>
           <Image src={line} alt="straight line vector" />
         </div>
 
@@ -94,7 +94,7 @@ const Footer = () => {
 
         </ul>
 
-        <div>
+        <div className='not-mobile'>
           <Image src={line} alt="straight line vector" />
         </div>
 

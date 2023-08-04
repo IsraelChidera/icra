@@ -23,11 +23,19 @@ const Hero = () => {
                     viewport={{ once: false, amount: 0.25 }}
                 >
                     <div className="hero-container">
+
+                        <motion.div
+                            variants={slideIn('top', 'tween', 0.4, 2)}
+                            className="z-10 hero-image md:hidden block"
+                        >
+                            <Image src={heroImage} alt="icra hero image" />
+                        </motion.div>
+
                         <motion.h1
                             variants={textVariant(1.1)}
                         >
-                            <Image src={heroBanner} height="44px" width="451px" alt="search" />
-                            <Image src={heroBanner2} height="44px" width="451px" alt="search" />
+                            <Image src={heroBanner} className="hero-text"  alt="search" />
+                            <Image src={heroBanner2} className="hero-text"  alt="search" />
                         </motion.h1>
 
                         <motion.div
@@ -55,7 +63,7 @@ const Hero = () => {
 
                     <motion.div
                         variants={slideIn('top', 'tween', 0.4, 2)}
-                        className="z-10 hero-image"
+                        className="z-10 hero-image md:block hidden"
                     >
                         <Image src={heroImage} alt="icra hero image" className="hero-image" />
                     </motion.div>
@@ -69,10 +77,10 @@ const Hero = () => {
                     />
                 </div>
 
-                <div className="hero-contact pb-10">
+                <div className="hero-contact md:pb-10">
                     <div className="hero-contact-div space-x-4">
-                        <div className="hero-contact-border flexed space-x-2">
-                            <Image src={location} alt="location" />
+                        <div className="hero-contact-border flexed md:space-x-2">
+                            <Image src={location} alt="location" className=""/>
                             <div>
                                 <h4>Pay us a Visit</h4>
                                 <p className="text-xs">
@@ -81,7 +89,7 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        <div className=" hero-contact-border flexed space-x-4">
+                        <div className=" hero-contact-border flexed md:space-x-4">
                             <Image src={call} alt="location" />
                             <div>
                                 <h4>Give us a call</h4>
@@ -91,7 +99,7 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        <div className="flexed space-x-4">
+                        <div className="flexed md:space-x-4">
                             <Image src={mail} alt="location" />
                             <div>
                                 <h4>Send us a Message</h4>
