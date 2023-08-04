@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { navVariants, fadeIn } from "@/utils/motion";
+import { fadeIn } from "@/utils/motion";
 
 const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     <motion.div
@@ -20,10 +20,10 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
                     {title}
                 </h3>
             ) : (<div style={{ color: "white", position: "absolute", bottom: "10px", left: "50%", fontWeight: "700" }}>
-                <h3 style={{fontSize: "28px"}}>
+                <h3 style={{ fontSize: "28px" }}>
                     {title}
                 </h3>
-                <p style={{textDecoration: "underline", fontWeight:"300"}}>
+                <p style={{ textDecoration: "underline", fontWeight: "300" }}>
                     Explore
                 </p>
             </div>)
