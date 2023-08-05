@@ -4,6 +4,7 @@ import { textContainer, textVariant2 } from '../utils/motion';
 
 export const TypingText = ({ title }) => (
     <motion.p
+        className='text-mobile-check'
         variants={textContainer}
         style={{ color: "white", fontSize: "36px", fontWeight: "700" }}
     >

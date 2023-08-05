@@ -508,7 +508,7 @@ footer ul li {
   }
 
   .flexed-about {
-    padding: 1rem;
+    padding: 0rem;
   }
 
   #about-btn {
@@ -601,6 +601,58 @@ footer ul li {
 
   .tech-bg-container {
     margin-top: 10rem;
+  }
+
+  .about-heading div h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .flexed-about h2 {
+    font-size: 20px;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .flexed-to-center h3,
+  .typing-text {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .flexed-to-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flexed-about h3 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  p.text-mobile-check {
+    text-align: center;
+  }
+
+  .about-heading-details {
+    text-align: center;
+  }
+
+  .flexed div p {
+    text-align: center;
+  }
+
+  .contact-form {
+    max-width: 95%;
+  }
+
+  footer ul li {  
+    font-size: 12px;
+  }
+
+  footer h4 {
+    font-size: 10px;
   }
 }
 
